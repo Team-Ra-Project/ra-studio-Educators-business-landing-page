@@ -549,6 +549,40 @@ Date       : 17 July 2026
     margin-top:24px;
   }
 
+  .cta-contact-row{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-top:44px;
+  }
+  .cta-contact-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--white);
+    font-family:var(--font-mono);
+    font-size:.88rem;
+    padding:14px 24px;
+    border-radius:999px;
+    transition:border-color .25s ease, transform .25s ease, background .25s ease;
+  }
+  .cta-contact-pill:hover{
+    border-color:var(--violet);
+    background:var(--panel);
+    transform:translateY(-2px);
+  }
+  .cta-contact-pill svg{
+    width:18px;height:18px;
+    flex-shrink:0;
+    color:var(--violet-light);
+  }
+  @media (max-width:560px){
+    .cta-contact-pill{ font-size:.82rem; padding:12px 18px; }
+  }
+
   /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line);padding:56px 0 40px;}
   .footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;margin-bottom:36px;}
@@ -978,9 +1012,22 @@ Date       : 17 July 2026
     <div class="node" data-node></div>
     <div class="eyebrow" style="justify-content:center;">Let's Talk — Educator &amp; Institute Growth</div>
     <h2 class="reveal">Let's Engineer Your Growth System</h2>
-    <p class="reveal">Tell us about your business, your industry, and your growth goals. Our strategists will craft a custom growth blueprint designed specifically for your business — not a generic package, not a one-size-fits-all proposal.</p>
-    <a href="https://wa.me/919004390564" class="btn-primary reveal">Book Your Free Growth Consultation →</a>
-    <a href="https://calendly.com/radigitalwork0/30min" target="_blank" rel="noopener" id="consultationBookingBtn" class="btn-primary reveal" style="margin-top:16px;">Book Your Free Growth Consultation Today</a>
+    <p class="reveal">We'll analyze your current challenges, identify growth opportunities, and recommend the right strategy to help you scale with confidence.</p>
+    <a href="https://calendly.com/radigitalwork0/30min" target="_blank" rel="noopener" id="consultationBookingBtn" class="btn-primary reveal">Book Your Free Growth Consultation Today</a>
+    <div class="cta-contact-row reveal">
+      <a href="tel:8467886865" class="cta-contact-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+91 84678 86865</span>
+      </a>
+      <a href="https://wa.me/919004390564" class="cta-contact-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp: +91 90043 90564</span>
+      </a>
+      <a href="mailto:radigitalwork0@gmail.com" class="cta-contact-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+        <span>radigitalwork0@gmail.com</span>
+      </a>
+    </div>
     <p class="final-note reveal">Free consultation for coaches, trainers, and institutes. No obligation. Our only goal is to show you what's possible.</p>
   </section>
 
